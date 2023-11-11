@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Air Quality App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Air Quality Index</h1>
+        <button  style="border-radius: 10px; border: none;   background-color: #4CAF50; color: white;
+font-family: 'Courier New', Courier, monospace;    " onclick="getLocation()"> My Location <b> AQI </b></button>
+        <br>
+        <br>
+        <div style="color: #cdd2fa; font-weight: 700; font-size: 20px;" id="result"></div>
+
+        <h2 class="h2">Air Quality Index Scale :</h2>
+        <table>
+            <tr>
+                <th>Qualitative name</th>
+                <th>Index</th>
+                <th>SO2 (μg/m³)</th>
+                <th>NO2 (μg/m³)</th>
+                <th>PM10 (μg/m³)</th>
+                <th>PM2.5 (μg/m³)</th>
+                <th>O3 (μg/m³)</th>
+                <th>CO (μg/m³)</th>
+            </tr>
+            <tr>
+                <td>Good</td>
+                <td>1</td>
+                <td>[0; 20)</td>
+                <td>[0; 40)</td>
+                <td>[0; 20)</td>
+                <td>[0; 10)</td>
+                <td>[0; 60)</td>
+                <td>[0; 4400)</td>
+            </tr>
+            <tr>
+                <td>Fair</td>
+                <td>2</td>
+                <td>[20; 80)</td>
+                <td>[40; 70)</td>
+                <td>[20; 50)</td>
+                <td>[10; 25)</td>
+                <td>[60; 100)</td>
+                <td>[4400; 9400)</td>
+            </tr>
+            <tr>
+                <td>Moderate</td>
+                <td>3</td>
+                <td>[80; 250)</td>
+                <td>[70; 150)</td>
+                <td>[50; 100)</td>
+                <td>[25; 50)</td>
+                <td>[100; 140)</td>
+                <td>[9400-12400)</td>
+            </tr>
+            <tr>
+                <td>Poor</td>
+                <td>4</td>
+                <td>[250; 350)</td>
+                <td>[150; 200)</td>
+                <td>[100; 200)</td>
+                <td>[50; 75)</td>
+                <td>[140; 180)</td>
+                <td>[12400; 15400)</td>
+            </tr>
+            <tr>
+                <td>Very Poor</td>
+                <td>5</td>
+                <td>⩾350</td>
+                <td>⩾200</td>
+                <td>⩾200</td>
+                <td>⩾75</td>
+                <td>⩾180</td>
+                <td>⩾15400</td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
