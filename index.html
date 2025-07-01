@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+              <script>
+              (function() {
+                  fetch("https://analytics.crowdapp.io/workspace/script?pid=f94f40b8-b470-4f8a-be05-344757aa5880")
+                  .then(response => response.json())
+                  .then(data => {data.data.forEach((e)=>{const sc = document.createElement('script');e.src ? sc.src = e.src : ()=>{};e.defer ? sc.defer = true : ()=>{};e.attributes.forEach((a)=>{sc.setAttribute(a.name,a.value)});e.text ? sc.text = e.text : ()=>{};e.type ? sc.type = e.type : ()=>{};document.head.appendChild(sc)})}).catch(error => console.error('Error loading scripts:', error));
+              })();
+              </script>
 <script>
 (function(a,b,c,d,e,f,g,h){a[e]=a[e]||{};g=b.createElement(c);h=b.getElementsByTagName(c)[0];
 g.async=true;g.src=d+f+'/spps.js';h.parentNode.insertBefore(g,h);})(window,document,
